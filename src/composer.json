@@ -1,0 +1,23 @@
+{
+    "name": "elden43/aoc2021",
+    "description": "Advent of Code 2021",
+    "type": "project",
+    "require": {
+        "tracy/tracy": "v3.0.x-dev",
+        "nette/utils": "4.0.x-dev",
+        "nette/robot-loader": "4.0.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Elden43\\Aoc2021\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jakub Jandák",
+            "email": "jakub@elden.cz"
+        }
+    ],
+    "minimum-stability": "dev"
+}

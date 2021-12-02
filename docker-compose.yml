@@ -1,0 +1,23 @@
+version: '3.5'
+
+services:
+    app:        
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: aoc2021
+        restart: on-failure
+        ports:
+            - 80:80
+            - 443:443
+        volumes:
+            - .:/var/www/html
+            - ./.docker/apache/000-default.conf:/etc/apache2/sites-enabled
+        environment:
+            NETTE_DEBUG: 1 
+        networks:
+            - dev_network
+        
+networks:
+    dev_network:
+        name: dev_network
