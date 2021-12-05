@@ -6,6 +6,7 @@ require_once "vendor/autoload.php";
 use Tracy\Debugger;
 
 Debugger::enable(Debugger::DEVELOPMENT);
+Debugger::$maxDepth = 4;
 
 $loader = new Nette\Loaders\RobotLoader;
 $loader->addDirectory(__DIR__ . '/Commons');

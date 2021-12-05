@@ -9,14 +9,12 @@ const FORWARD = 'forward';
 const UP = 'up';
 const DOWN = 'down';
 
-$splitBy = '~[\s]+~';
-
 $input = InputLoader::linesToArray(AOC_INPUTS . "day2/input.txt");
 
 $horizontal = 0;
 $depth = 0;
 foreach ($input as $inputLine) {
-	$command = InputLoader::split($inputLine, $splitBy);
+	$command = InputLoader::split($inputLine, InputLoader::SPLIT_SPACE);
 	switch ($command[0]) {
 		case FORWARD:
 			$horizontal += $command[1];
