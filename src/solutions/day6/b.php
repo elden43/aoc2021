@@ -12,7 +12,7 @@ include_once "../../bootstrap.php";
 
 $days = 256;
 $input = InputLoader::intArray(InputLoader::split(InputLoader::load(AOC_INPUTS . "day6/input.txt"), InputLoader::SPLIT_COMMA));
-dump($input);
+
 $swarm = [];
 foreach ($input as $fish) {
 	$swarm[$fish] = ($swarm[$fish] ?? 0) + 1;
