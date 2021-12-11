@@ -9,6 +9,7 @@ class InputLoader extends FileLoader
 	public const SPLIT_END_OF_LINE = "~\r\n|\r|\n~";
 	public const SPLIT_SPACE = "~[\s+]~";
 	public const SPLIT_COMMA = "~(\,)~";
+	public const SPLIT_PIPE = "~(\|)~";
 
 
     public static function linesToArray(string $pathToFile): array
